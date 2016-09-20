@@ -33,8 +33,7 @@ $(document).ready(function() {
 				'user_name'		: $('input[name=name]').val(), 
 				'user_email'	: $('input[name=email]').val(), 
 				'country_code'	: $('input[name=phone1]').val(), 
-				'phone_number'	: $('input[name=phone2]').val(), 
-				'subject'		: $('select[name=subject]').val(), 
+				'phone_number'	: $('input[name=phone2]').val(),  
 				'msg'			: $('textarea[name=message]').val()
 			};
             
@@ -76,13 +75,6 @@ $(document).ready(function() {
         </label>
         <label><span>Phone</span>
             <input type="text" name="phone1" maxlength="4" placeholder="+91"  required="true" class="tel-number-field"/>&mdash;<input type="text" name="phone2" maxlength="15"  required="true" class="tel-number-field long" />
-        </label>
-            <label for="subject"><span>Regarding</span>
-            <select name="subject" class="select-field">
-            <option value="General Question">General Question</option>
-            <option value="Advertise">Advertisement</option>
-            <option value="Partnership">Partnership Oppertunity</option>
-            </select>
         </label>
         <label for="field5"><span>Message <span class="required">*</span></span>
             <textarea name="message" id="message" class="textarea-field" required="true"></textarea>
